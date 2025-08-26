@@ -35,6 +35,7 @@ GH_USER="gioxx"
 GH_REPO="MarvellousSuspender"
 $CURL --output images/${GH_REPO}.svg   "http://localhost:9008/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
 
+git checkout images
 git status images --untracked-files=no
 git diff --exit-code images/update.svg
 
@@ -43,5 +44,11 @@ if [ $? -ne 0 ]; then
     git diff --exit-code images/update.svg > tee update.txt
     cat update.txt | mailx -s "github-readme-stats" ${NOTIFY_EMAIL}
   fi
-  # commit to a branch, or use -- prefix
+
+  if [ 1 -eq 2 ]; then
+  git commit -m "Update images" *.svg
+  fi
+
 fi
+
+git checkout main
