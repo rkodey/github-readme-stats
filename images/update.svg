@@ -10,8 +10,8 @@
       >
         <title id="titleId">Rob Kodey's GitHub Stats, Rank: B</title>
         <desc id="descId">
-          Total Stars Earned: 134
-          Total PRs: 19
+          Total Stars Earned: 136
+          Total PRs: 20
         </desc>
         <style>
           .header {
@@ -131,7 +131,7 @@
         x="219.01"
         y="12.5"
         data-testid="stars"
-      >134</text>
+      >136</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -146,7 +146,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >19</text>
+      >20</text>
     </g>
   </g>
     </svg>
