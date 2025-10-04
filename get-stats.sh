@@ -9,7 +9,7 @@ PORT=$1
 NOTIFY_EMAIL=$2
 
 if [ "$PORT" == "" ]; then
-  PORT=9000
+  PORT=9008
 fi
 
 # Search commits wile excluding (this) repo
@@ -52,6 +52,7 @@ if [ $? -ne 0 ]; then
     cat update.txt | mailx -s "github-readme-stats" ${NOTIFY_EMAIL}
   fi
 
-  # git commit -m "-- Update images" *.svg
+  git commit -m "-- Update images" *.svg
+  git push origin
 
 fi
