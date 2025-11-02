@@ -43,12 +43,18 @@ GH_USER="gioxx"
 GH_REPO="MarvellousSuspender"
 $CURL --output images/${GH_REPO}.svg   "http://localhost:$PORT/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
 
+
+node get-chrome-store.js plpkmjcnhhnpkblimgenmdhghfgghdpp
+node get-chrome-store.js noogafoofpebimajpfpamcfhoaifemoa
+
+
 git status images --untracked-files=no
 git diff --exit-code images/update.svg
 
 if [ $? -ne 0 ]; then
   if [ "${NOTIFY_EMAIL}" != "" ]; then
-    git diff images/update.svg | tee update.txt
+    echo "https://github.com/rkodey/github-readme-stats" > update.txt
+    git diff images/update.svg | tee -a update.txt
     cat update.txt | mailx -s "github-readme-stats" ${NOTIFY_EMAIL}
   fi
 
