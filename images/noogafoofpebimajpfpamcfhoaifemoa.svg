@@ -108,7 +108,7 @@
       </svg>
       <g transform="translate(20, 1)">
         <text data-testid="users" class="gray">
-          80,000 users
+          90,000 users
         </text>
       </g>
     </g>
@@ -130,7 +130,7 @@
         </text>
         <g transform="translate(24, 0)">
         <text data-testid="ratings" class="gray">
-          (480 ratings)
+          (481 ratings)
         </text>
         </g>
       </g>
