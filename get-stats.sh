@@ -5,12 +5,16 @@
 # 9008 docker port
 
 clear
-PORT=$1
-NOTIFY_EMAIL=$2
+NOTIFY_EMAIL=$1
+PORT=$2
+DEBUG=0
+UPDATE=0
 
 if [ "$PORT" == "" ]; then
   PORT=9008
 fi
+
+if [ $DEBUG -eq 0 ]; then
 
 # Search commits wile excluding (this) repo
 # curl https://api.github.com/search/commits?q=author:rkodey+-repo:rkodey/github-readme-stats
@@ -47,18 +51,29 @@ $CURL --output images/${GH_REPO}.svg   "http://localhost:$PORT/pin/?username=${G
 node get-chrome-store.js plpkmjcnhhnpkblimgenmdhghfgghdpp
 node get-chrome-store.js noogafoofpebimajpfpamcfhoaifemoa
 
+fi  # DEBUG
+
 
 git status images --untracked-files=no
-git diff --exit-code images/update.svg
 
-if [ $? -ne 0 ]; then
-  if [ "${NOTIFY_EMAIL}" != "" ]; then
-    echo "https://github.com/rkodey/github-readme-stats" > update.txt
-    git diff images/update.svg | tee -a update.txt
-    cat update.txt | mailx -s "github-readme-stats" ${NOTIFY_EMAIL}
-  fi
+echo "https://github.com/rkodey/github-readme-stats" > update.txt
+update() {
+  git diff --exit-code --color=always images/$1.svg >> update.txt
+  if [ $? -ne 0 ]; then UPDATE=1; fi
+  echo $UPDATE $1
+}
+update "update"
+update "plpkmjcnhhnpkblimgenmdhghfgghdpp"
+update "noogafoofpebimajpfpamcfhoaifemoa"
 
+
+if [ $UPDATE -eq 1 ]; then
+  cat update.txt
   git commit -m "-- Update images" *.svg
   git push origin
+
+  if [ "${NOTIFY_EMAIL}" != "" ]; then
+    cat update.txt | aha | mailx -s "github-readme-stats" -M "text/html" ${NOTIFY_EMAIL}
+  fi
 
 fi
