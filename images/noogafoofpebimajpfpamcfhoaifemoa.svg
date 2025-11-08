@@ -108,7 +108,7 @@
       </svg>
       <g transform="translate(20, 1)">
         <text data-testid="users" class="gray">
-          90,000 users
+          80,000 users
         </text>
       </g>
     </g>
