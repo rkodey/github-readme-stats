@@ -69,7 +69,7 @@ update "noogafoofpebimajpfpamcfhoaifemoa"
 
 if [ $UPDATE -eq 1 ]; then
   cat update.txt
-  git commit -m "-- Update images" *.svg
+  git commit -m "-- Auto update images" *.svg
   git push origin
 
   if [ "${NOTIFY_EMAIL}" != "" ]; then
