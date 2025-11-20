@@ -39,17 +39,17 @@ $CURL --output images/${GH_USER}2.svg  "http://localhost:$PORT/?username=${GH_US
 GH_OPTIONS="${GH_COMMON}&show_owner=false"
 
 GH_REPO="the-great-er-discarder-er"
-$CURL --output images/${GH_REPO}.svg   "http://localhost:$PORT/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
+$CURL --output images/${GH_REPO}-github.svg   "http://localhost:$PORT/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
 GH_REPO="winmerge-visual-studio-dark"
-$CURL --output images/${GH_REPO}.svg   "http://localhost:$PORT/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
+$CURL --output images/${GH_REPO}-github.svg   "http://localhost:$PORT/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
 
 GH_USER="gioxx"
 GH_REPO="MarvellousSuspender"
-$CURL --output images/${GH_REPO}.svg   "http://localhost:$PORT/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
+$CURL --output images/${GH_REPO}-github.svg   "http://localhost:$PORT/pin/?username=${GH_USER}&repo=${GH_REPO}${GH_OPTIONS}"
 
 
-node get-chrome-store.js plpkmjcnhhnpkblimgenmdhghfgghdpp
-node get-chrome-store.js noogafoofpebimajpfpamcfhoaifemoa
+node get-chrome-store.js plpkmjcnhhnpkblimgenmdhghfgghdpp the-great-er-discarder-er
+node get-chrome-store.js noogafoofpebimajpfpamcfhoaifemoa MarvellousSuspender
 
 fi  # DEBUG
 

@@ -5,6 +5,7 @@ import fs from "node:fs";
 (async () => {
 
   const ID        = process.argv[2] ?? 'plpkmjcnhhnpkblimgenmdhghfgghdpp';
+  const FILE      = process.argv[3] ?? 'the-great-er-discarder-er';
 
   /**
    * @param {{ data?: any[]; }} input
@@ -204,7 +205,7 @@ import fs from "node:fs";
 </svg>
       `;
 
-      fs.writeFileSync(`images/${ID}.svg`, svg)
+      fs.writeFileSync(`images/${FILE}-chrome.svg`, svg)
     }
   }
 
