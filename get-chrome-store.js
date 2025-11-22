@@ -1,11 +1,12 @@
 // @ts-check
-import strict from "node:assert/strict";
 import fs from "node:fs";
 
 (async () => {
 
-  const ID        = process.argv[2] ?? 'plpkmjcnhhnpkblimgenmdhghfgghdpp';
-  const FILE      = process.argv[3] ?? 'the-great-er-discarder-er';
+  const FILE      = process.argv[2] ?? 'images/the-great-er-discarder-er-chrome.svg';
+  const ID        = process.argv[3] ?? 'plpkmjcnhhnpkblimgenmdhghfgghdpp';
+
+  console.log(`get-chrome-store ${FILE}`);
 
   /**
    * @param {{ data?: any[]; }} input
@@ -205,7 +206,7 @@ import fs from "node:fs";
 </svg>
       `;
 
-      fs.writeFileSync(`images/${FILE}-chrome.svg`, svg)
+      fs.writeFileSync(FILE, svg)
     }
   }
 

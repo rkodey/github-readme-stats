@@ -1,8 +1,12 @@
-# GitHub Readme Stats
+# GitHub Readme Stats ( via command line )
 
-Self-hosted Docker config for
+~~Self-hosted Docker config for
 [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
-that pushes the generated images back to this repo for hosting.
+that pushes the generated images back to this repo for hosting.~~
+
+Removes the need for Vercel, express.js, docker, or any other hosting.  All you need is a shell and GitHub!<br>
+Runs [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+directly with node via command line, and pushes the generated images back to this repo for hosting.
 
 ---
 <br>
