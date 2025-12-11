@@ -55,6 +55,8 @@ echo "https://github.com/rkodey/github-readme-stats" > update.txt
 update() {
   git diff --exit-code --color=always images/$1.svg >> update.txt
   if [ $? -ne 0 ]; then UPDATE=1; fi
+  grep -i "Something went wrong" images/$1.svg >> update.txt
+  if [ $? -eq 0 ]; then UPDATE=0; fi
   echo $UPDATE $1
 }
 update "update"
