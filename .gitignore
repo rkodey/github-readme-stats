@@ -1,5 +1,6 @@
 .env
 github-readme-stats
 images/rkodey2.svg
+node_modules
 test.*
 update.txt

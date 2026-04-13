@@ -11,7 +11,7 @@
         <title id="titleId">Rob Kodey's GitHub Stats, Rank: B+</title>
         <desc id="descId">
           Total Stars Earned: 155
-          Total Commits  : 222
+          Total Commits  : 223
           Total PRs: 30
           Total Issues: 22
         </desc>
@@ -38,7 +38,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
+      font: 800 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -62,7 +62,7 @@
     }
     .rank-circle {
       stroke: #4493F8;
-      stroke-dasharray: 250;
+      stroke-dasharray: 276.46;
       fill: none;
       stroke-width: 10;
       stroke-linecap: round;
@@ -71,16 +71,16 @@
       transform: rotate(-90deg);
       animation: rankAnimation 1s forwards ease-in-out;
     }
-    .dimmer {
+    .dim {
       opacity: 0.2;
     }
     
     @keyframes rankAnimation {
       from {
-        stroke-dashoffset: 276.46015351590177;
+        stroke-dashoffset: 276.46;
       }
       to {
-        stroke-dashoffset: 127.58909127705128;
+        stroke-dashoffset: 127.56;
       }
     }
   
@@ -138,7 +138,7 @@
         </svg>
       
         </g>
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="44" />
+        <circle class="rank-circle-rim dim" cx="-10" cy="8" r="44" />
         <circle class="rank-circle" cx="-10" cy="8" r="44" />
       </g>
     <svg x="0" y="0">
@@ -170,7 +170,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >222</text>
+      >223</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">

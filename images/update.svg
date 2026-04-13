@@ -36,7 +36,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
+      font: 800 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -60,7 +60,7 @@
     }
     .rank-circle {
       stroke: #4493F8;
-      stroke-dasharray: 250;
+      stroke-dasharray: 276.46;
       fill: none;
       stroke-width: 10;
       stroke-linecap: round;
@@ -69,7 +69,7 @@
       transform: rotate(-90deg);
       animation: rankAnimation 1s forwards ease-in-out;
     }
-    .dimmer {
+    .dim {
       opacity: 0.2;
     }
     

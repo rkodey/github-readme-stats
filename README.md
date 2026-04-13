@@ -1,4 +1,4 @@
-# GitHub Readme Stats ( via command line )
+# GitHub Readme Stats CLI
 
 ~~Self-hosted Docker config for
 [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
