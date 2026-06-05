@@ -53,6 +53,10 @@
       display: block;
     }
 
+    .dim {
+      opacity: 0.2;
+    }
+
     .rank-circle-rim {
       stroke: #4493F8;
       fill: none;
@@ -80,13 +84,10 @@
       transform: rotate(-90deg);
       animation: rankAnimation-next 1s forwards ease-in-out;
     }
-    .dim {
-      opacity: 0.2;
-    }
     
     
     <!-- Next Rank  : 37.50 -->
-    <!-- Percentile : 38.65 -->
+    <!-- Percentile : 38.61 -->
     <!-- Prev Rank  : 50.00 -->
   
 
