@@ -8,7 +8,7 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Rob Kodey's GitHub Stats, Rank: B+</title>
+        <title id="titleId">Rob Kodey's GitHub Stats</title>
         <desc id="descId">
           Total Stars Earned: 163
           Total PRs: 30
@@ -69,10 +69,25 @@
       transform: rotate(-90deg);
       animation: rankAnimation 1s forwards ease-in-out;
     }
+    .rank-circle-next {
+      stroke: #000000;
+      stroke-dasharray: 276.46;
+      fill: none;
+      stroke-width: 6;
+      stroke-linecap: round;
+      opacity: 0.4;
+      transform-origin: -10px 8px;
+      transform: rotate(-90deg);
+      animation: rankAnimation-next 1s forwards ease-in-out;
+    }
     .dim {
       opacity: 0.2;
     }
     
+    
+    <!-- Next Rank  : 37.50 -->
+    <!-- Percentile : 38.65 -->
+    <!-- Prev Rank  : 50.00 -->
   
 
           
