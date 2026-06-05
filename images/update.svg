@@ -36,7 +36,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
+      font: 700 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -61,6 +61,7 @@
       stroke: #4493F8;
       fill: none;
       stroke-width: 10;
+      opacity: 0.2;
     }
     .rank-circle {
       stroke: #4493F8;
@@ -84,11 +85,6 @@
       transform: rotate(-90deg);
       animation: rankAnimation-next 1s forwards ease-in-out;
     }
-    
-    
-    <!-- Next Rank  : 37.50 -->
-    <!-- Percentile : 38.59 -->
-    <!-- Prev Rank  : 50.00 -->
   
 
           

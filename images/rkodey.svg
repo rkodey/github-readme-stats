@@ -8,10 +8,10 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Rob Kodey's GitHub Stats, Rank: B+</title>
+        <title id="titleId">Rob Kodey's GitHub Stats</title>
         <desc id="descId">
           Total Stars Earned: 163
-          Total Commits  : 375
+          Total Commits  : 376
           Total PRs: 30
           Total Issues: 23
         </desc>
@@ -38,7 +38,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
+      font: 700 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #888888;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -63,6 +63,7 @@
       stroke: #4493F8;
       fill: none;
       stroke-width: 10;
+      opacity: 0.2;
     }
     .rank-circle {
       stroke: #4493F8;
@@ -86,13 +87,14 @@
       transform: rotate(-90deg);
       animation: rankAnimation-next 1s forwards ease-in-out;
     }
+  
     
     @keyframes rankAnimation {
       from {
         stroke-dashoffset: 276.46;
       }
       to {
-        stroke-dashoffset: 121.59;
+        stroke-dashoffset: 121.57;
       }
     }
   
@@ -107,9 +109,9 @@
     }
   
     <!-- Next Rank  : 37.50 -->
-    <!-- Percentile : 43.98 -->
+    <!-- Percentile : 43.97 -->
     <!-- Prev Rank  : 50.00 -->
-  
+    
 
           
       /* Animations */
@@ -163,9 +165,9 @@
         </svg>
       
         </g>
-        <circle class="rank-circle-rim dim" cx="-10" cy="8" r="44" />
-        <circle class="rank-circle-next"    cx="-10" cy="8" r="44" />
-        <circle class="rank-circle"         cx="-10" cy="8" r="44" />
+        <circle class="rank-circle-rim"   cx="-10" cy="8" r="44" />
+        <circle class="rank-circle-next"  cx="-10" cy="8" r="44" />
+        <circle class="rank-circle"       cx="-10" cy="8" r="44" />
       </g>
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
@@ -196,7 +198,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >375</text>
+      >376</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
