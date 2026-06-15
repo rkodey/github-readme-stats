@@ -11,8 +11,8 @@
         <title id="titleId">Rob Kodey's GitHub Stats</title>
         <desc id="descId">
           Total Stars Earned: 163
-          Total Commits  : 382
-          Total PRs: 30
+          Total Commits  : 392
+          Total PRs: 33
           Total Issues: 23
         </desc>
         <style>
@@ -94,7 +94,7 @@
         stroke-dashoffset: 276.46;
       }
       to {
-        stroke-dashoffset: 121.25;
+        stroke-dashoffset: 119.14;
       }
     }
   
@@ -109,7 +109,7 @@
     }
   
     <!-- Next Rank  : 37.50 -->
-    <!-- Percentile : 43.86 -->
+    <!-- Percentile : 43.10 -->
     <!-- Prev Rank  : 50.00 -->
     
 
@@ -198,7 +198,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >382</text>
+      >392</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -213,7 +213,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >30</text>
+      >33</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
