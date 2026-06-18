@@ -23,7 +23,7 @@ if [ $FETCH -eq 1 ]; then
   GH_USER="rkodey"
 
   # Since commits to this repo would cause the commit counter to increase, we'll only commit new images if the Stars or PRs update
-  GH_OPTIONS="${GH_COMMON}&show_icons=true&hide_title=true&hide_rank=true&include_all_commits=false&hide=commits,contribs,issues"
+  GH_OPTIONS="${GH_COMMON}&show_icons=true&hide_title=true&hide_rank=true&include_all_commits=true&hide=commits,contribs"
   node get-github.js  user  images/update.svg       "username=${GH_USER}${GH_OPTIONS}"
 
   GH_OPTIONS="${GH_COMMON}&show_icons=true&hide_title=true&hide_rank=false&include_all_commits=true&hide=contribs&card_width=440px"
@@ -70,14 +70,14 @@ git diff --exit-code --color=always *.svg >> update.txt
 if [ $UPDATE -eq 1 ]; then
   MSG=" NO COMMIT"
   if [ $COMMIT -eq 1 ]; then
-    cat update.txt
-    git commit -m "-- Auto update images" *.svg
-    git push origin
     MSG=""
   fi
 
   if [ "${NOTIFY_EMAIL}" != "" ]; then
-    cat update.txt | aha | mailx -s "github-readme-stats${MSG}" -M "text/html" ${NOTIFY_EMAIL}
+    cat update.txt
+    git commit -m "-- Auto update images" *.svg
+    git push origin
+    cat update.txt | aha | mailx -s "github-readme-stats" -M "text/html" ${NOTIFY_EMAIL}
   fi
 
 fi
