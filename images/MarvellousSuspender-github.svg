@@ -102,7 +102,7 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">Free your memory: a Manifest V3 Chrome extension that</tspan><tspan dy="1.2em" x="25">suspends inactive tabs to save memory and CPU. Session</tspan><tspan dy="1.2em" x="25">backup, tab health checks, Google Drive sync, 18 languages....</tspan>
+      <tspan dy="1.2em" x="25">A free, open-source Chrome extension - no ads, no tracking.</tspan><tspan dy="1.2em" x="25">Based on The Great Suspender, cleaned up and actively</tspan><tspan dy="1.2em" x="25">maintained.</tspan>
     </text>
 
     <g transform="translate(30, 75)">
