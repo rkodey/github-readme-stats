@@ -78,13 +78,13 @@
         The Marvellous Suspender
       </text>
       <text x="325" y="0" text-anchor="end" class="header" data-testid="header">
-        v9.0.1
+        v9.0.2
       </text>
     </g>
 
     <foreignObject x="0" y="0" width="300" height="100">
       <p xmlns="http://www.w3.org/1999/xhtml" class="description">
-        Make your computer run smoothly by suspending the tabs you aren't using
+        Free your memory. Suspend the tabs you don't need, right now.
       </p>
     </foreignObject>
 
