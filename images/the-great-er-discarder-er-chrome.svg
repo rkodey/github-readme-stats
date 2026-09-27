@@ -129,11 +129,11 @@
       </svg>
       <g transform="translate(20, 1)">
         <text data-testid="ratings" class="gray">
-          4.4
+          4.3
         </text>
         <g transform="translate(24, 0)">
         <text data-testid="ratings" class="gray">
-          (48 ratings)
+          (49 ratings)
         </text>
         </g>
       </g>
